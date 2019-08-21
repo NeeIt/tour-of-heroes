@@ -1,0 +1,9 @@
+<h3>The Best users!</h3>
+<div class="grid grid-pad">
+    <a *ngFor="let user of users" class="col-1-4" routerLink="/details/{{user.id}}">
+        <div class="module user">
+            <h4>{{user.name}}</h4>
+        </div>
+    </a>    
+</div>
+<app-user-search></app-user-search>
